@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">	
+	<link rel="stylesheet" href="css/add.css">
+	<title>직접 만들어 보는 함수</title>
+</head>
+<body>
+	<script>
+		function add_1(){
+			var num1 = parseInt(prompt("첫 번째 숫자는? "));
+			var num2 = parseInt(prompt("두 번째 숫자는? "));
+			var result = add(num1, num2);
+
+			alert(  num1 + " + " + num2 + " = " + result  );
+		
+			function add(a, b) {
+				var sum = a + b;
+				return sum;
+		}
+		}
+		
+	</script>
+<button onclick="add_1()">덧셈 계산하기</button>
+</body>
+</html>
